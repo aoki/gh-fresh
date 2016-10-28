@@ -7,11 +7,13 @@ $(document).ready(() => {
 
 	const insertElement = document.createElement('p');
 	insertElement.setAttribute('class', 'container');
-	insertElement.style.cssText = 'background-color: #fafafa;' +
-                                'margin-top: 15px;' +
-                                'font-size: 15px;' +
-                                'font-weight: bold;' +
-                                'margin-bottom: 15px;';
+	insertElement.style.cssText = `
+    background-color: #fafafa;
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  `
 
 	if (diff_date <= -12) {
 		insertElement.style.cssText += 'color: #FF2D2D';
