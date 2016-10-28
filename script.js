@@ -1,11 +1,11 @@
-$(document).ready(function () {
-	var last_commit_title = document.querySelector('relative-time').title;
-	var last_commit_datetime = document.querySelector('relative-time').getAttribute('datetime');
-	var date = moment(last_commit_datetime);
-	var now = moment();
-	var diff_date = date.diff(now, 'months');
+$(document).ready(() => {
+	const last_commit_title = document.querySelector('relative-time').title;
+	const last_commit_datetime = document.querySelector('relative-time').getAttribute('datetime');
+	const date = moment(last_commit_datetime);
+	const now = moment();
+	const diff_date = date.diff(now, 'months');
 
-	var insertElement = document.createElement('p');
+	const insertElement = document.createElement('p');
 	insertElement.setAttribute('class', 'container');
 	insertElement.style.cssText = 'background-color: #fafafa;' +
                                 'margin-top: 15px;' +
